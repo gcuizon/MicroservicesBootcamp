@@ -2,12 +2,12 @@ package microservices.training.camp.rest.exception;
 
 import java.util.Date;
 
-public class ExceptionResponse {
+public class ResquestResponse {
 	private Date date;
 	private String message;
 	private String description;
 
-	public ExceptionResponse(Date date, String message, String description) {
+	public ResquestResponse(Date date, String message, String description) {
 		this.date = date;
 		this.message = message;
 		this.description = description;

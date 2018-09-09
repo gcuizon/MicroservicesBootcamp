@@ -11,12 +11,12 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonFilter;
 
 @Entity
-//@JsonFilter("AppUserFilter")
 @NamedQueries({
 			   @NamedQuery(name="getUserById", query="FROM AppUser WHERE id=:userId"), 
                @NamedQuery(name="getAllAppUsers", query="FROM AppUser"),
                @NamedQuery(name="deleteUserById", query="DELETE FROM AppUser WHERE id=:userId")
 })
+@JsonFilter("AppUserFilter")//note: all objects returning an instance needs to implement filtering
 public class AppUser {
 	
 	@Id 
