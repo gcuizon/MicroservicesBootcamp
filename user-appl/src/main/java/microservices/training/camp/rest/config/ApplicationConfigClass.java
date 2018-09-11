@@ -8,7 +8,6 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
-
 @EntityScan("microservices.training.camp.rest.bean")//important to expose the named queries
 @EnableSwagger2
 public class ApplicationConfigClass {
