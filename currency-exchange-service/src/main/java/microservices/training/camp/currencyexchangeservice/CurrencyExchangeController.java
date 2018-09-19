@@ -21,7 +21,7 @@ public class CurrencyExchangeController {
 	public ExchangeValue retrieveExchangeValue(@PathVariable String from, @PathVariable String to){
 		
 		ExchangeValue exchangeValue = currencyExchangeDao.getExchangeValue(from, to);
-				
+		exchangeValue.setPort(Integer.valueOf(environment.getProperty("local.server.port")));
 		return exchangeValue;
 	}
 

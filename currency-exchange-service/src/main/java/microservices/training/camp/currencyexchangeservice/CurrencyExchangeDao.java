@@ -1,8 +1,5 @@
 package microservices.training.camp.currencyexchangeservice;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
